@@ -9,7 +9,7 @@ def pull_repka(repka):
     repka.append(izba[shout])
     print ', '.join([repka[repka.index(x) + 1] + ' za ' + x for x in reversed(repka)
                      if repka.index(x) != len(repka) - 1 and len(repka) != 0])
-    if len(repka) == len(izba):
+    if len(repka) > len(izba):
         print 'Repka is pulled'
     else:
         print 'Not enough power to pull the repka'
